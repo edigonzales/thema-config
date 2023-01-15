@@ -1,1 +1,1 @@
-# themen-config
+# thema-config
