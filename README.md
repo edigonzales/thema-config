@@ -14,3 +14,33 @@ Beispiele (?):
 TODO:
 - INTERLIS-Modelle: Wie komme ich zum Repo? (Themen-Repo abgrasen? Im Prinzip gleich. Eventuell gibts ja ein Repo-Repo-Configfile, wo drin steht, welches Amt etc.)
 - Modell/Struktur wie das Repo aussehn muss/darf. Dann kann mit Pipeline geprüft werden, ob i.O.
+
+
+## cli / dev env
+
+- Was ist mit Jenkins?
+
+
+```
+soctrl
+```
+
+
+```
+soctrl> dev [start|stop]
+```
+
+
+```
+soctrl> gretl path/to/job-directory
+```
+
+
+```
+soctrl> topics ls
+```
+
+???
+```
+soctrl> topics awjf_seltene_baeume ls
+```
