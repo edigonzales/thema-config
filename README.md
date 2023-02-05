@@ -5,10 +5,12 @@ Ziele:
 - Transparenz schaffen: Besseres Verständnis eines Themas (technische Aspekte).
 - Themen können jederzeit und einzeln (ohne Einwirkungen auf andere Themen) publiziert werden.
 - Lokale Entwicklungsumgebungen sind überall einfach zu verwenden. Testumgebungen sind beliebig horizontal (in der Menge) skalierbar und öffentlich verfügbar.
+- Thema-Config /-Repo soll validiert werden können: Ist alles drin, was benötigt wird? etc.
+
 
 Beispiele (?):
-- HBA-Sachen, da aktuell und es noch offene Punkte (aka Bugs) gibt, die man im Repo verwalten sollte.
-- Seltene Bäume, da explizites Edit-Modell und "Json-Rendering".
+- HBA-Sachen, da aktuell und es noch offene Punkte (aka Bugs) gibt, die man im Code-Repo verwalten sollte (Issues).
+- Seltene Baumarten, da explizites Edit-Modell und "Json-Rendering".
 - Abbaustellen, da ganz simpel.
 
 TODO:
@@ -42,5 +44,5 @@ soctrl> topics ls
 
 ???
 ```
-soctrl> topics awjf_seltene_baeume ls
+soctrl> topics awjf_seltene_baumarten ls
 ```
