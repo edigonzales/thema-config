@@ -10,7 +10,7 @@ Ziele:
 
 Beispiele (?):
 - HBA-Sachen, da aktuell und es noch offene Punkte (aka Bugs) gibt, die man im Code-Repo verwalten sollte (Issues).
-- Seltene Baumarten, da explizites Edit-Modell und "Json-Rendering".
+- Seltene Baumarten, da explizites Edit-Modell und "Json-Rendering". Und in Pubmodell Vererberbung.
 - Abbaustellen, da ganz simpel.
 
 TODO:
