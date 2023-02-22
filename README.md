@@ -6,7 +6,7 @@ Ziele:
 - Themen können jederzeit und einzeln (ohne Einwirkungen auf andere Themen) publiziert werden.
 - Lokale Entwicklungsumgebungen sind überall einfach zu verwenden. Testumgebungen sind beliebig horizontal (in der Menge) skalierbar und öffentlich verfügbar.
 - Thema-Config /-Repo soll validiert werden können: Ist alles drin, was benötigt wird? etc.
-- Teilkonfigurationen sind problemlos möglich, d.h. ich will nur XTF aus Edit-DB publizieren.
+- Teilkonfigurationen sind problemlos möglich, d.h. ich will nur XTF aus Edit-DB publizieren. Oder die XTF der ÖREB-Rahmenmodells im Datenbezug zur Verfügung stellen (Annahme: es gibt keinen Publisher-Job oder so).
 
 
 Beispiele (?):
