@@ -36,4 +36,6 @@
     - `<Schema-Job>`: Technisch frei wählbarer Name des Schema-Jobs. Konvention wie heute. 
   - `security`: Ablage einer vereinfachten Schutzbedarfsanalyse für die Daten
     - `<???.md>`: Markdown entsteht aus Github-Formular-Issue. Entweder wird das hierhin kopiert oder bleibt ein Issue oder sonst was. Muss evaluiert werden. Wenn es aber in Github ist, ist jede Änderung getrackt.
+- `shared`
+  - `core_data`: Stammdaten
 
