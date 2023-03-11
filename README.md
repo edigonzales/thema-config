@@ -1,6 +1,7 @@
 # thema-config
 
-## Ziele
+## Ziele
+
 - Konfiguration eines Themas ist an _einer_ Stelle gespeichert.
 - Transparenz schaffen: Besseres Verständnis eines Themas (technische Aspekte).
 - Themen können jederzeit und einzeln (ohne Einwirkungen auf andere Themen) publiziert werden.
@@ -10,13 +11,14 @@
 - Schema-Jobs flexibler ("Pub" in "Edit", ...)
 - SO-Modelle werden aus dem lokalen Repo verwendet.
 
+## Beispiele (?)
 
-## Beispiele (?)
 - HBA-Sachen, da aktuell und es noch offene Punkte (aka Bugs) gibt, die man im Code-Repo verwalten sollte (Issues).
 - Seltene Baumarten, da explizites Edit-Modell und "Json-Rendering". Und in Pubmodell Vererberbung.
 - Abbaustellen, da ganz simpel.
 
-## todo
+## todo
+
 - INTERLIS-Modelle: Wie komme ich zum Repo? (Themen-Repo abgrasen? Im Prinzip gleich. Eventuell gibts ja ein Repo-Repo-Configfile, wo drin steht, welches Amt etc.)
 - Modell/Struktur wie das Repo aussehen muss/darf. Dann kann mit Pipeline geprüft werden, ob i.O.
 - 
