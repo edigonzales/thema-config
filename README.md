@@ -18,7 +18,9 @@
 - Abbaustellen, da ganz simpel.
 
 ## todo
-
+- Dev-Umgebung:
+  * DB "bitnami"
+  * SFTP (nur das Zertifikatgedöns war doof, sonst war es easy mit einem Dockerimage, glaubs)
 - INTERLIS-Modelle: Wie komme ich zum Repo? (Themen-Repo abgrasen? Im Prinzip gleich. Eventuell gibts ja ein Repo-Repo-Configfile, wo drin steht, welches Amt etc.)
   * -> PoC im Branch o.ä.
 - Modell/Struktur wie das Repo aussehen muss/darf. Dann kann mit Pipeline geprüft werden, ob i.O.
@@ -31,6 +33,7 @@
 - Subunits:
   * statisch: GeoJSON vollständig manuell
   * dynamisch: GeoJSON mit Platzhalter. Datum muss in einerm File zwischengespeichert werden. Diese wird nachgeführt mit dem GRETL-Job. Eigentlich könnte gleich das GeoJSON als Speicherfile verwendet werden.
+- Wie kann das HTML während Entwicklung einfach erzeugt werden, zwecks Validierung?
 
 ## Schema
 
