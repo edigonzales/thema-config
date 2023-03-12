@@ -20,7 +20,14 @@
 ## todo
 
 - INTERLIS-Modelle: Wie komme ich zum Repo? (Themen-Repo abgrasen? Im Prinzip gleich. Eventuell gibts ja ein Repo-Repo-Configfile, wo drin steht, welches Amt etc.)
+  * -> PoC im Branch o.ä.
 - Modell/Struktur wie das Repo aussehen muss/darf. Dann kann mit Pipeline geprüft werden, ob i.O.
+  * -> Prüfung via Pipeline?
+- Datensuche mit einzelnen XTF-Dateien 
+  * PoC. Wo liegen sie? SFTP oder HTTP?
+- GRETL-Job:
+  * Db2Db: nicht interessant
+  * Reicht Publisher-Task? Dann da wichtigste: der Metapublisher.
 - Subunits:
   * statisch: GeoJSON vollständig manuell
   * dynamisch: GeoJSON mit Platzhalter. Datum muss in einerm File zwischengespeichert werden. Diese wird nachgeführt mit dem GRETL-Job. Eigentlich könnte gleich das GeoJSON als Speicherfile verwendet werden.
