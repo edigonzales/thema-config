@@ -1,0 +1,4 @@
+[submodule "thema-config-shared"]
+	path = thema-config-shared
+	url = https://github.com/edigonzales/thema-config-shared.git
+	branch = main
