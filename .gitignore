@@ -1,5 +1,8 @@
 .DS_Store
-.xtf
-!offices.xtf
-.xml
-.html
+**/.gradle
+**/build
+**/*.xtf
+!**/offices.xtf
+!**/xtf/*.xtf
+**/*.xml
+**/*.html

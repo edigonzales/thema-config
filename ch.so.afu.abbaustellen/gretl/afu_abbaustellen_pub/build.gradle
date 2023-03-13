@@ -1,0 +1,22 @@
+import ch.so.agi.gretl.tasks.*
+import ch.so.agi.gretl.api.TransferSet
+
+
+apply plugin: 'ch.so.agi.gretl'
+
+defaultTasks 'publishFile'
+
+tasks.register('foo') {
+    doLast {
+        println "bar"
+    }
+}
+
+tasks.register('publishFile', Publisher) {
+    dependsOn 'foo'
+    dataIdent = "ch.so.afu.abbaustellen"
+    target = [file("out")]  
+    sourcePath = file("ch.so.afu.abbaustellen.xtf")
+    modeldir = "%XTF_DIR;/ili/;https://models.interlis.ch/"
+    validationConfig = "$projectDir/validation.ini"
+}

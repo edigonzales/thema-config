@@ -32,8 +32,12 @@
   * Reicht Publisher-Task? Dann da wichtigste: der Metapublisher.
 - Subunits:
   * statisch: GeoJSON vollständig manuell
-  * dynamisch: GeoJSON mit Platzhalter. Datum muss in einerm File zwischengespeichert werden. Diese wird nachgeführt mit dem GRETL-Job. Eigentlich könnte gleich das GeoJSON als Speicherfile verwendet werden.
+  * dynamisch: GeoJSON mit Platzhalter. Datum muss in einem File zwischengespeichert werden. Diese wird nachgeführt mit dem GRETL-Job. Eigentlich könnte gleich das GeoJSON als Speicherfile verwendet werden.
 - Wie kann das HTML während Entwicklung einfach erzeugt werden, zwecks Validierung?
+
+## Fragen
+- Wenn JSON in das Repo kopiert werden, wird es insgesamt relativ gross. Stört das? Pro Thema ein einzelnes Repo und ein Shared? Dann müssten immer beide ausgecheckt werden. Geht das überhaupt mit dem Job-Sauger von Jenkins. Hätte aber den Vorteil, dass alles schön isoliert ist. Repostruktur kann als Template gemacht werden.
+
 
 ## Schema
 
@@ -51,3 +55,12 @@
 - `shared`
   - `core_data`: Stammdaten
 
+## Commands
+
+```
+./infra/start-gretl.sh --docker-image sogis/gretl:latest --job-directory $PWD/ch.so.afu.abbaustellen/gretl/afu_abbaustellen_pub
+```
+
+```
+./infra/start-gretl.sh --docker-image sogis/gretl:latest --job-directory $PWD/ch.so.agi.amtliche_vermessung/gretl/agi_mopublic_pub
+```
