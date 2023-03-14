@@ -38,7 +38,7 @@
 ## Fragen
 - Wenn JSON in das Repo kopiert werden, wird es insgesamt relativ gross. Stört das? Pro Thema ein einzelnes Repo und ein Shared? Dann müssten immer beide ausgecheckt werden. Geht das überhaupt mit dem Job-Sauger von Jenkins. Hätte aber den Vorteil, dass alles schön isoliert ist. Repostruktur kann als Template gemacht werden.
 Bin noch Fan der Idee von Submodule/Subtree. Wichtig schiene mir, dass man nicht einfach so Änderungen im Submodule/Subtree machen kann. Das scheint der Fall zu sein. Andererseits sieht man ja schnell das Unheil. Ah jein: Wo liegen die GeoJSON-Dinger eigentlich. Die müssen ja nicht ins Repo (höchstens als Template), sondern auf die Fileablage und von dort müssten sie nachgeführt werden. Mmmmh, noch zu überlegen. Ah vielleicht doch ins Repo: Nämlich für den Fall, dass auf der Ablage KEIN GeoJSON existiert, wird es erstmalig hinkopiert.
-- Woher weiss SIMI oder so, dass 260100 = 2601 ist bei den Datasets resp. regions. Es wird das File published, d.h. region ist 260100. Dataset ist aber 2601 (siehe Substring): https://github.com/sogis/gretljobs/blob/main/agi_av_dm01_mopublic_pub/0_dm01_so/build.gradle#L72 -> braucht es trotzdem einen Übersetzer/Mapper?
+- Woher weiss SIMI oder so, dass 260100 = 2601 ist bei den Datasets resp. regions. Es wird das File published, d.h. region ist 260100. Dataset ist aber 2601 (siehe Substring): https://github.com/sogis/gretljobs/blob/main/agi_av_dm01_mopublic_pub/0_dm01_so/build.gradle#L72 -> braucht es trotzdem einen Übersetzer/Mapper? Nein. Die ITF-Dateien werden im Task vorher umbenannt.
 
 ## Schema
 
