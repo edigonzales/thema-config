@@ -1,0 +1,32 @@
+import ch.so.agi.gretl.tasks.*
+import ch.so.agi.gretl.api.TransferSet
+
+
+apply plugin: 'ch.so.agi.gretl'
+
+defaultTasks 'printPublishedRegions'
+
+tasks.register('foo') {
+    doLast {
+        println "bar"
+    }
+}
+
+tasks.register('publishFile', Publisher) {
+    dependsOn 'foo'
+    dataIdent = "ch.so.agi.av.dm01_so"
+    target = [file("out")]  
+    sourcePath = file("itf/dummy.itf") // file("itf/") funktioniert nicht. Es braucht eine (nicht vorhandene) Datei.
+    region = ".*" // Wenn von lokal publiziert wird, ist "publishedRegion" der Filename ohne Extension. Das passt dann nicht mehr genau zum subunit-Identifier. Wenn aus DB, ist alles i.O.
+    modeldir = "%XTF_DIR;/ili/;https://models.interlis.ch/"
+    validationConfig = "$projectDir/validation.ini"
+}
+
+tasks.register('printPublishedRegions') {
+    dependsOn 'publishFile'
+    doLast() {
+        publishFile.publishedRegions.get().each {
+            println it
+        }
+    }
+}
