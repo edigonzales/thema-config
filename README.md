@@ -39,6 +39,7 @@
 - In start-gretl.sh mounte ich eine weiteres Verzeichnis "ili".
 
 ## Fragen
+- Woher Bbox? Bbox für z.B. Lidar, das nur einen Teil abdeckt? Ah, dort haben wir ja eh regions? Dann müsste BBox aber die Aggregierung sein.
 - MetaPublisher-Step/Task: Braucht es das "Root-Verzeichnis"? Eher nein, wenn man im gretl-root-dir ein settings-File hat, falls keine build.gradle drin ist. Dann ist es das project root dir (o.ä.) und Konvention ist bekannt: eins hoch = 'gretl'. zwei hoch = 'thema'. eins runter = 'ili'
 - Wenn JSON in das Repo kopiert werden, wird es insgesamt relativ gross. Stört das? Pro Thema ein einzelnes Repo und ein Shared? Dann müssten immer beide ausgecheckt werden. Geht das überhaupt mit dem Job-Sauger von Jenkins. Hätte aber den Vorteil, dass alles schön isoliert ist. Repostruktur kann als Template gemacht werden.
 Bin noch Fan der Idee von Submodule/Subtree. Wichtig schiene mir, dass man nicht einfach so Änderungen im Submodule/Subtree machen kann. Das scheint der Fall zu sein. Andererseits sieht man ja schnell das Unheil. Ah jein: Wo liegen die GeoJSON-Dinger eigentlich. Die müssen ja nicht ins Repo (höchstens als Template), sondern auf die Fileablage und von dort müssten sie nachgeführt werden. Mmmmh, noch zu überlegen. Ah vielleicht doch ins Repo: Nämlich für den Fall, dass auf der Ablage KEIN GeoJSON existiert, wird es erstmalig hinkopiert.
